@@ -1,0 +1,54 @@
+{
+    "Nombres_Empresas" : [
+        "GOOGL", 
+        "AMZN", 
+        "AAPL", 
+        "META", 
+        "MSFT", 
+        "NVDA", 
+        "TSLA"
+    ],
+    "Columnas_DataFrame" : [
+        "Fecha_Generacion", 
+        "Apertura", 
+        "Maximo", 
+        "Minimo", 
+        "Cierre", 
+        "Volumen", 
+        "Codigo"
+    ],
+    "Columnas_Redshift" : {
+        "Clave_Compuesta" : "VARCHAR(50) PRIMARY KEY",
+        "Fecha_Generacion" : "DATE",
+        "Codigo" : "VARCHAR(50)",
+        "Empresa" : "VARCHAR(300)",
+        "Sector" : "VARCHAR(50)",
+        "Industria" : "VARCHAR(100)",
+        "Apertura": "DECIMAL(10,2)",
+        "Maximo": "DECIMAL(10,2)",
+        "Minimo": "DECIMAL(10,2)",
+        "Cierre": "DECIMAL(10,2)",
+        "Volumen": "INT",
+        "Fecha_Extraccion": "TIMESTAMP" 
+    },
+    "Credenciales": {
+        "API_KEY": "e56fbd50187042ddb52609330c61ebac",
+        "DW_USER": "b_arganaraz_londero_coderhouse",
+        "DW_PASSWORD": "msw7K88pN6",
+        "DW_HOST": "data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com",
+        "DW_PORT": "5439",
+        "DW_NAME": "data-engineer-database",
+        "SENDGRID_API_KEY": "",
+        "EMAIL_FROM": "",
+        "EMAIL_TO": ""
+    },
+    "Limites": {
+        "GOOGL": {"minimo": 100, "maximo": 160}, 
+        "AMZN": {"minimo": 100, "maximo": 190}, 
+        "AAPL": {"minimo": 160, "maximo": 200}, 
+        "META": {"minimo": 205, "maximo": 530}, 
+        "MSFT": {"minimo": 275, "maximo": 430}, 
+        "NVDA": {"minimo": 260, "maximo": 955}, 
+        "TSLA": {"minimo": 140, "maximo": 295}
+	}
+}
